@@ -409,3 +409,9 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-982.949
 wait(0.2)
 end
 end)
+local Tab = Window:NewTab("Toggle Gui")
+local ToggleGuiSection = Tab:NewSection("Toggle Gui")
+ToggleGuiSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
+end)
+
